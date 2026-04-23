@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  background: #111827;
+  color: #e5e7eb;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.browser {
+  width: 90vw;
+  height: 90vh;
+  background: #020617;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  border: 1px solid #1f2937;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  background: #030712;
+  border-bottom: 1px solid #1f2937;
+}
+
+.toolbar button {
+  background: #111827;
+  color: #e5e7eb;
+  border: 1px solid #374151;
+  border-radius: 6px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.toolbar button:hover {
+  background: #1f2937;
+}
+
+.url-bar {
+  display: flex;
+  flex: 1;
+  gap: 6px;
+  margin-left: 6px;
+}
+
+#urlInput {
+  flex: 1;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid #374151;
+  background: #020617;
+  color: #e5e7eb;
+  font-size: 14px;
+}
+
+#urlInput:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 1px #3b82f6;
+}
+
+.url-bar button[type="submit"] {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: none;
+  background: #3b82f6;
+  color: white;
+  font-weight: 500;
+}
+
+.url-bar button[type="submit"]:hover {
+  background: #2563eb;
+}
+
+.viewport {
+  flex: 1;
+  background: #020617;
+}
+
+#viewFrame {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: white;
+}
+
+.status-bar {
+  height: 26px;
+  padding: 4px 10px;
+  font-size: 12px;
+  background: #030712;
+  border-top: 1px solid #1f2937;
+  display: flex;
+  align-items: center;
+  color: #9ca3af;
+}
