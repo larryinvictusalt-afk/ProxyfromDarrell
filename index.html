@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mini Proxy Browser</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="browser">
+    <header class="toolbar">
+      <button id="backBtn" title="Back">⟵</button>
+      <button id="forwardBtn" title="Forward">⟶</button>
+      <button id="reloadBtn" title="Reload">⟳</button>
+
+      <form id="urlForm" class="url-bar">
+        <input
+          id="urlInput"
+          type="text"
+          placeholder="Enter URL (https://example.com)"
+          autocomplete="off"
+        />
+        <button type="submit">Go</button>
+      </form>
+    </header>
+
+    <main class="viewport">
+      <!-- We’ll inject proxied HTML here -->
+      <iframe id="viewFrame" sandbox="allow-same-origin allow-scripts"></iframe>
+    </main>
+
+    <footer class="status-bar">
+      <span id="statusText">Ready</span>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
